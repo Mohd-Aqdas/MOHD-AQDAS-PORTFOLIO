@@ -117,6 +117,8 @@ Average rides Comparison
 
 In this step,we will create a presentation which contains all of our studies with some appealing visuals.
 
+**Here is my Presentation link:-** https://github.com/Mohd-Aqdas/MOHD-AQDAS-PORTFOLIO/blob/f542d4e4a3059f7b90bffec6541555f26a934092/PRESENTATION.pptx
+ (*YOU CAN DOWNLOAD MY PRESENTATION FROM THIS LINK*)
 ## SUMMARY OF FINDINGS
 
 The data lacks information, which decreased the accuracy of results.
