@@ -163,3 +163,10 @@ We have got some results but they do not have enough information which makes the
 With the lack of information it is very risky to move forward with our strategy.
 
 I’ll propose to go with the second recommendation, which is to wait and collect more meaningful data to get some meaningful insights.
+
+### Contact Me
+Email- aqdas4211@gmail.com
+
+My Kaggle Notebook:- https://www.kaggle.com/code/maqdas/cyclistic-case-study
+
+LinkedIn:- https://www.linkedin.com/in/mohd-aqdas-012a37221
