@@ -46,3 +46,86 @@ Cyclistic executive team: The notoriously detail-oriented executive team will de
 
 ## Second step- Prepare
 In this step, we will download and store the data in an organized structure. Then we will sort the data for further analysis.
+### MY code-
+,,,r
+
+#Installing the packages
+install.packages('tidyverse')
+install.packages('readr')
+install.packages('lubridate')
+install.packages("dplyr")
+install.packages("magrittr")
+
+#Loading the packages
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(lubridate)
+library(magrittr)
+
+#Adding a name <- Importing the csv(file_location)
+Jan2022 <- read_csv("Divvy_Tripdata/2022_01.csv")
+Feb2022 <- read_csv("Divvy_Tripdata/2022_02.csv")
+Mar2022 <- read_csv("Divvy_Tripdata/2022_03.csv")
+Apr2022 <- read_csv("Divvy_Tripdata/2022_04.csv")
+May2022 <- read_csv("Divvy_Tripdata/2022_05.csv")
+Jun2022 <- read_csv("Divvy_Tripdata/2022_06.csv")
+Jul2022 <- read_csv("Divvy_Tripdata/2022_07.csv")
+Aug2022 <- read_csv("Divvy_Tripdata/2022_08.csv")
+
+#str(dataset_name)
+colnames(Jan2022)
+colnames(Feb2022)
+colnames(Mar2022)
+colnames(Apr2022)
+colnames(May2022)
+colnames(Jun2022)
+colnames(Jul2022)
+colnames(Aug2022)
+
+#Creating new dataset name <- binding rows(all_your_datasets)
+
+merged_data <- bind_rows(Jan2022, Feb2022, Mar2022, Apr2022, May2022, Jun2022, Jul2022, Aug2022)
+
+head(merged_data)
+,,,,,
+
+## Third Step- Process
+In this step, we will clean the dataset and assure its integrity.
+
+Code:-
+,,,r
+#Cleaning the Dataset
+
+#Fixing Column Types
+str(merged_data)
+
+merged_data$started_at <- as.POSIXct(merged_data$started_at, format = "%Y-%m-%d %H:%M:%S")
+merged_data$ended_at <- as.POSIXct(merged_data$ended_at, format = "%Y-%m-%d %H:%M:%S")
+str(merged_data)
+
+
+#Removing NA/null values
+cleaned_df_1 <- na.omit(merged_data)
+
+#Adding Ride Length Column
+cleaned_df_2 <- mutate(cleaned_df_1, ride_length = difftime(ended_at, started_at, units = "mins"))
+str(cleaned_df_2)
+
+#To calculate the number of observations with negative ride length
+nrow(cleaned_df_2[cleaned_df_2$ride_length < 0,])
+
+
+## We use the ! to NOT show observations where ride_length < 0.
+cleaned_df_3 <- cleaned_df_2[!cleaned_df_2$ride_length < 0,]
+head(cleaned_df_3, 5)
+
+#Adding Month and Day and Hour Columns
+
+
+cleaned_df_4 <- mutate(cleaned_df_3, trip_month = format(as.POSIXct(started_at), "%B-%y"), trip_day = format(as.POSIXct(started_at),"%A"), trip_hour = format(as.POSIXct(started_at),"%H"))
+head(cleaned_df_4,3)
+
+#write.csv(cleaned_df_4, file = "cleaned_df_4.csv")
+,,, 
+
