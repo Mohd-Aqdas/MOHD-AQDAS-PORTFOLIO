@@ -23,7 +23,7 @@ Share
 
 Act
 
-## First Step- Ask
+## First Step:- Ask
 
 ### Defining Business Task
 There are two types of customers, casual riders and members. Lily Moreno (The director of marketing) came up with a hypothesis: Converting casual riders into members would lead to more profitable growth.
@@ -45,14 +45,22 @@ Cyclistic executive team: The notoriously detail-oriented executive team will de
 
 
 ### (This whole analysis is done with R in Rstudio)
-## Second step- Prepare
+
+## Second step:- Prepare
 In this step, we will download and store the data in an organized structure. Then we will sort the data for further analysis.
 
 ### Here is my Rscript
 
 https://github.com/Mohd-Aqdas/MOHD-AQDAS-PORTFOLIO/blob/c8e9660a69db825e269e063a5179cc026c3891c7/cyclistic.R
 
-## Fourth Step- Analyze
+## Third Step:- Process
+In this step, we will clean the dataset and assure its integrity.
+
+### Here is my Rscript
+
+https://github.com/Mohd-Aqdas/MOHD-AQDAS-PORTFOLIO/blob/c8e9660a69db825e269e063a5179cc026c3891c7/cyclistic.R
+
+## Fourth Step:- Analyze
 In this step, we analyzed our data and draw some patterns and trends. We also created some appealing visuals in R and Tableau.
  ### Here is my Rscript
  
@@ -115,7 +123,7 @@ Average rides Comparison
 
 **After completing four steps, there are two steps left Share and Act.**
 
-## Fifth Step Share-
+## Fifth Step:- Share
 
 In this step,we will create a presentation which contains all of our studies with some appealing visuals.
 
