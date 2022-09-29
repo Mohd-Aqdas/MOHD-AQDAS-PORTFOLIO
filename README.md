@@ -111,6 +111,8 @@ Average rides Comparison
 ![member station](https://user-images.githubusercontent.com/108889110/192986546-5e815d1a-ce05-4f14-a805-29d4e9d306ab.png)
 
 
+
+
 **After completing four steps, there are two steps left Share and Act.**
 
 ## Fifth Step Share-
