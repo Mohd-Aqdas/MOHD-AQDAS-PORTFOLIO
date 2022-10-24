@@ -1,7 +1,7 @@
 # MOHD-AQDAS-PORTFOLIO
 An aspiring Data Analyst
 
-## CASE STUDY 1 :- "Cyclistic Case Study:Analysing the usage for Customer Growth"
+## CASE STUDY 1 :- "Cyclistic Case Study:Analyzing the usage for Customer Growth"
 Author: Mohd Aqdas
 
 Date: 2022-09-23
