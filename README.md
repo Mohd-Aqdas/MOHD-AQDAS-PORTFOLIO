@@ -1,6 +1,5 @@
-# MOHD-AQDAS-PORTFOLIO
-An aspiring Data Analyst
-
+# Cyclystic
+A case study
 ## CASE STUDY 1 :- "Cyclistic Case Study:Analyzing the usage for Customer Growth"
 Author: Mohd Aqdas
 
